@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6c263f6924.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Harjeet Khanduja</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
+        {% block brand %}{% endblock %}
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link {{ 'active' if active_page == 'home' else '' }}" href="/">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {{ 'active' if active_page == 'about' else '' }}" href="/about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {{ 'active' if active_page == 'blog' else '' }}" href="" tabindex="-1">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {{ 'active' if active_page == 'book' else '' }}" href="/book" tabindex="-1">BOOK</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {{ 'active' if active_page == 'contact' else '' }}" href="/contact" tabindex="-1">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+    {% block content %}
+    {% endblock %}
+</div>
+
+
+
+
+
+    <footer class="page-footer font-small">
+
+        <div class="container">
+    
+          <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+    
+            <div class="col-md-2 mb-3">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="about.html" style="text-decoration:none;">About</a>
+              </h6>
+            </div>
+    
+            <div class="col-md-2 mb-3">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="">BLOG</a>
+              </h6>
+            </div>
+    
+            <div class="col-md-2 mb-3">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="book.html">BOOK</a>
+              </h6>
+            </div>
+    
+            <div class="col-md-2 mb-3">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="contact.html">CONTACT</a>
+              </h6>
+            </div>
+    
+          </div>
+          <hr class="rgba-white-light" style="margin: 0 15%;">
+    
+          <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+    
+            <div class="col-md-8 col-12 mt-5">
+              <p style="line-height: 1.7rem; color: white">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+            </div>
+    
+          </div>
+          <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+    
+          <div class="row pb-3">
+    
+            <div class="col-md-12">
+    
+              <div class="mb-5 flex-center text-center justify-content-center social-links" style="color: white;">
+    
+                <a class="fb-ic" href="https://www.facebook.com/hrredefined" target="_blank">
+                  <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+                </a>
+                <a class="tw-ic" href="https://twitter.com/HKhanduja" target="_blank">
+                  <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+                </a>
+                <a class="li-ic" href="https://www.linkedin.com/in/harjeetkhanduja/" target="_blank">
+                  <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
+                </a>
+                <a class="ins-ic" href="https://www.instagram.com/harjeetkhanduja/" target="_blank">
+                  <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+      
+    
+    
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      </body>
+    </html>

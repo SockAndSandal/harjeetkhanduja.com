@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display:wght@400;700&family=Roboto&display=swap');
+
+.aboutus{
+    display: flex;
+}
+
+body {
+    font-family: 'Lato';
+    font-weight: 400;
+}
+
+.aboutus-section {
+    padding: 25px 0;
+}
+.aboutus-title {
+    font-size: 30px;
+    font-family: Lato;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin: 0 0 39px;
+    padding: 0 0 11px;
+    position: relative;
+    color: #000;
+}
+.aboutus-title::after {
+    background: #d3c48d none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 54px;
+}
+.aboutus-text {
+    color: black;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0 0 35px;
+}
+
+
+
+#row-settings1{
+    margin-bottom: 20px;
+    background-color: #FDE8E2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#row-settings2{
+    margin-bottom: 20px;
+    background-color: #E0F5FF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#row-settings3{
+    margin-bottom: 20px;
+    background-color: #FFF1F0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.img-set{
+    padding-bottom: 20px;
+}
