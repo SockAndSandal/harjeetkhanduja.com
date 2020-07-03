@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/6c263f6924.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style_about.css') if active_page=='about' else '' }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style_book.css') if active_page=='book' else '' }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style_contact.css') if active_page=='contact' else '' }}">
     <title>Harjeet Khanduja</title>
   </head>
   <body>
