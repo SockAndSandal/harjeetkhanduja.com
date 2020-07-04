@@ -6,7 +6,7 @@
     <div class="container-fluid pb-10">
       <div class="row">
         <div class="col-lg-5 col-md-6 col-xs-12 mb-xs-10 mt-xs-10 align-self-center text-center">
-          <img class="d-md-inline-block img-fluid hkindex text-center" src="assets/hkindex.gif" alt="Harjeet Khanduja">
+          <img class="d-md-inline-block img-fluid hkindex text-center" src="{{ url_for('static', filename = 'img/hkindex.gif') }}" alt="Harjeet Khanduja">
         </div>
         <div class="col-lg-7 col-md-6 col-xs-12">
           <div id="carouselHK" class="carousel slide" data-ride="carousel">
@@ -17,13 +17,16 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" src="assets/images/carousel_home/car1.png" alt="First slide">
+                <img class="d-block w-100" src="{{ url_for('static', filename = 'img/carousel_home/car1.png') }}" alt="">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="assets/images/carousel_about/car2.png" alt="Second slide">
+                <img class="d-block w-100" src="{{ url_for('static', filename = 'img/carousel_home/car2.png') }}" alt="">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="assets/images/carousel_home/car3.png" alt="Third slide">
+                <img class="d-block w-100" src="{{ url_for('static', filename = 'img/carousel_home/car3.png') }}" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="{{ url_for('static', filename = 'img/carousel_home/car4.png') }}" alt="">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselHK" role="button" data-slide="prev">
@@ -51,7 +54,7 @@
             <p>Behind his serious facade hides a witty and highly humorous person. He is a great asset while supporting CEOs and finds solutions to sticky problems.</p>
           </blockquote>
           <div class="source media flex-column align-items-center">
-            <img class="source-profile mx-auto mb-2" src="assets/images/profiles/sandip.jpeg" alt="image" >
+            <img class="source-profile mx-auto mb-2" src="{{ url_for('static', filename = 'img/profiles/sandip.jpeg') }}" alt="image" >
             <div class="source-info media-body text-center text-md-left">
               <div class="source-name text-center">Sandip Das</div>
               <div class="soure-title text-center">App Developer, Company Ipsum</div>
@@ -66,7 +69,7 @@
             <p>Harjeet is an outstanding HR professional. He has a unique ability to connect with both employees and managers on both a personal and business level.</p>
           </blockquote>
           <div class="source media flex-column align-items-center">
-            <img class="source-profile mx-auto mb-2" src="assets/images/profiles/rick.jpeg" alt="image" >
+            <img class="source-profile mx-auto mb-2" src="{{ url_for('static', filename = 'img/profiles/rick.jpeg') }}" alt="image" >
             <div class="source-info media-body text-center text-md-left">
               <div class="source-name text-center">Rick Kneipper</div>
               <div class="soure-title text-center">App Developer, Company Ipsum</div>
@@ -81,7 +84,7 @@
             <p>Harjeet brings a sense of accountability in every employee in the organization - be it performance accountability or behavioral accountability.</p>
           </blockquote>
           <div class="source media flex-column align-items-center">
-            <img class="source-profile mx-auto mb-2" src="assets/images/profiles/vish.jpeg" alt="image" >
+            <img class="source-profile mx-auto mb-2" src="{{ url_for('static', filename = 'img/profiles/vish.jpeg') }}" alt="image" >
             <div class="source-info media-body text-center text-md-left">
               <div class="source-name text-center">Vish Sivaswamy</div>
               <div class="soure-title text-center">App Developer, Company Ipsum</div>
@@ -108,13 +111,13 @@
             
             <div class="cta-holder">
               <a class="btn btn-dark mr-lg-2" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devbook-free-bootstrap-4-book-ebook-landing-page-template-for-developers/">BUY NOW</a>
-              <a class="btn btn-secondary mr-lg-2" href="book.html">LEARN MORE</a>
+              <a class="btn btn-secondary mr-lg-2" href="/book">LEARN MORE</a>
           </div>
           </div>
         </div>
         <div class="col-12 col-md-5 mb-5 align-self-center">
           <div class="book-cover-holder">
-            <img class="img-fluid book-cover" src="assets/images/nab.png" alt="nothing about business" >
+            <img class="img-fluid book-cover" src="{{ url_for('static', filename = 'img/nab.png') }}" alt="nothing about business" >
           </div>
         </div>
       </div>

@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/6c263f6924.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style_about.css') if active_page=='about' else '' }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style_book.css') if active_page=='book' else '' }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/styles_book.css') if active_page=='book' else '' }}">
     <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style_contact.css') if active_page=='contact' else '' }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="shortcut icon" href=" {{ url_for('static', filename = 'img/favicon.ico') }}" type="image/x-icon">
     <title>Harjeet Khanduja</title>
   </head>
   <body>
@@ -39,7 +40,7 @@
       </div>
     </nav>
 
-    <div class="container">
+    <div class="container-fluid" style="padding-left: 0; padding-right: 0;">
     {% block content %}
     {% endblock %}
 </div>
@@ -56,25 +57,25 @@
     
             <div class="col-md-2 mb-3">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="about.html" style="text-decoration:none;">About</a>
+                <a href="/about" style="color: white;">About</a>
               </h6>
             </div>
     
             <div class="col-md-2 mb-3">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="">BLOG</a>
+                <a href="" style="color: white;">BLOG</a>
               </h6>
             </div>
     
             <div class="col-md-2 mb-3">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="book.html">BOOK</a>
+                <a href="/book" style="color: white;">BOOK</a>
               </h6>
             </div>
     
             <div class="col-md-2 mb-3">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="contact.html">CONTACT</a>
+                <a href="/contact" style="color: white;">CONTACT</a>
               </h6>
             </div>
     
@@ -100,16 +101,16 @@
     
               <div class="mb-5 flex-center text-center justify-content-center social-links" style="color: white;">
     
-                <a class="fb-ic" href="https://www.facebook.com/hrredefined" target="_blank">
+                <a class="fb-ic" href="https://www.facebook.com/hrredefined" style="color: white;">
                   <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
                 </a>
-                <a class="tw-ic" href="https://twitter.com/HKhanduja" target="_blank">
+                <a class="tw-ic" href="https://twitter.com/HKhanduja" style="color: white;">
                   <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
                 </a>
-                <a class="li-ic" href="https://www.linkedin.com/in/harjeetkhanduja/" target="_blank">
+                <a class="li-ic" href="https://www.linkedin.com/in/harjeetkhanduja/" style="color: white;">
                   <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
                 </a>
-                <a class="ins-ic" href="https://www.instagram.com/harjeetkhanduja/" target="_blank">
+                <a class="ins-ic" href="https://www.instagram.com/harjeetkhanduja/" style="color: white;">
                   <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
                 </a>
               </div>
@@ -121,7 +122,7 @@
       
     
     
-    
+        <script src="{{ url_for('static', filename = 'js/script.js') }}"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
