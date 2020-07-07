@@ -40,6 +40,17 @@
       </div>
     </nav>
 
+    <hr>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+
+        {% for message in messages %}
+        <small>{{ message }}</small>
+        {% endfor %}
+
+    {% endif %}
+    {% endwith %}
+
     <div class="container-fluid" style="padding-left: 0; padding-right: 0;">
     {% block content %}
     {% endblock %}
@@ -116,6 +127,8 @@
               </div>
             </div>
           </div>
+          {% block footer %}
+          {% endblock %}
         </div>
       </footer>
     

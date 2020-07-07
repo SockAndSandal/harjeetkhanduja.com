@@ -1,9 +1,16 @@
 {% set active_page = "home" %}
 {% extends "base.html" %}
+
+{% block footer %}
+<div class="footer-bottom text-center py-5">
+	<small class="copyright" style="color: white;">Designed with <i class="fas fa-heart" style="color: white;"></i>  by <a class="theme-link"  style="color: white;" href="https://www.behance.net/amanbeer899" target="_blank" rel="noopener noreferrer">Amanbeer Khanduja</a></small>
+</div>
+{% endblock %}
+
 {% block content %}
 <div class="home">
   <section id="landing-section">
-    <div class="container-fluid pb-10">
+    <div class="container-fluid pb-10" style="padding-left: 0; padding-right: 0;">
       <div class="row">
         <div class="col-lg-5 col-md-6 col-xs-12 mb-xs-10 mt-xs-10 align-self-center text-center">
           <img class="d-md-inline-block img-fluid hkindex text-center" src="{{ url_for('static', filename = 'img/hkindex.gif') }}" alt="Harjeet Khanduja">
@@ -14,6 +21,7 @@
               <li data-target="#carouselHK" data-slide-to="0" class="active" data-wrap="true"></li>
               <li data-target="#carouselHK" data-slide-to="1"></li>
               <li data-target="#carouselHK" data-slide-to="2"></li>
+              <li data-target="#carouselHK" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">

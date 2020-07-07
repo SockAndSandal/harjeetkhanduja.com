@@ -2,7 +2,13 @@
 {% extends "base.html" %}
 
 {% block brand %}
-<a class="navbar-brand brand-title" href="index.html">Harjeet Khanduja</a>
+<a class="navbar-brand brand-title" href="/">Harjeet Khanduja</a>
+{% endblock %}
+
+{% block footer %}
+<div class="footer-bottom text-center py-5">
+	<small class="copyright" style="color: white;">Template designed with <i class="fas fa-heart" style="color: white;"></i>  by <a class="theme-link" style="color: white;" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+</div>
 {% endblock %}
 
 {% block content %}
@@ -17,7 +23,6 @@
 					    </h1><!--//headline-->
 					    <div class="subheadline mb-4">
 							<strong>Nothing About Business</strong> is a book for the person looking for a simple, gyan-free way to understand the nuances of business, life and leadership that only experience can teach you. That is, until now. Featuring Harjeet Khanduja's best and most loved LinkedIn stories in a collection that's both easy on the eyes, and on the mind.
-						    
 					    </div><!--//subheading-->
 					    
 					    <div class="cta-holder">
@@ -28,7 +33,7 @@
 			    </div><!--col-->
 			    <div class="col-12 col-md-5 mb-5 align-self-center">
 				    <div class="book-cover-holder">
-					    <img class="img-fluid book-cover" src="assets/images/nab.png" alt="nothing about business" >
+					    <img class="img-fluid book-cover" src=" {{ url_for('static', filename = 'img/nab.png') }} " alt="nothing about business" >
 				    </div><!--//book-cover-holder-->
 			    </div><!--col-->
 		    </div><!--//row-->
@@ -73,25 +78,30 @@
 		    </div>
 	    </div>
     </section>
-    
+	
+	
+
+
     <section id="form-section" class="form-section">
 	    <div class="container">
 		    <div class="lead-form-wrapper single-col-max mx-auto theme-bg-light rounded p-5">
 			    <h2 class="form-heading text-center">Get A Free Preview</h2>
-			    <div class="form-intro text-center mb-3">Sign up to get a free preview of the book. <br>You can offer visitors free book previews to generate leads.</div>
+			    <div class="form-intro text-center mb-3">Enter your email below to get a free preview of the book!<br></div>
 			    <div class="form-wrapper">
-				    <form class="form-inline justify-content-center flex-wrap">
+				    <form class="form-inline justify-content-center flex-wrap" method="POST" novalidate action="">
+						{{ form.hidden_tag() }}
 						<div class="form-group mr-md-2 mb-3 mb-md-0">
-							<label for="email" class="sr-only">Email</label>
-							<input type="email" class="form-control " id="email" placeholder="Your Email">
+							<p>
+								{{form.emails(class='form-control')}}
+							</p>
 						</div>
-						<button type="submit" class="btn btn-primary btn-submit mb-3 mb-md-0">Send</button>
+						<p>{{ form.submit(class='btn btn-dark btn-submit mb-3 mb-md-0') }}</p>
 					</form>
-			    </div><!--//form-wrapper-->
-		    </div><!--//lead-form-wrapper-->
-	    </div><!--//container-->
-    </section><!--//form-section-->
-    
+			    </div>
+		    </div>
+	    </div>
+	</section>
+
     <section id="reviews-section" class="reviews-section py-5">
 	    <div class="container">
 		    <h2 class="section-heading text-center">Book Reviews</h2>
@@ -173,11 +183,26 @@
 				    </div><!--//inner-->
 			    </div><!--//item-->
 		    </div><!--//row-->
-		    <div class="text-center">
-		        <a class="btn btn-secondary" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devbook-free-bootstrap-4-book-ebook-landing-page-template-for-developers/">BUY IT NOW!</a>
-		    </div>
 	    </div><!--//container-->
 	</section><!--//reviews-section-->    
+
+	<section id="buy-section">
+		<div class="container-fluid" style="padding-right: 0; padding-left: 0;">
+			<div class="my-class" style="background-color: #551c1c;">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-4 mb-5 align-self-center">
+								<img class="img-fluid book-cover" src=" {{ url_for('static', filename = 'img/nab_buy.png') }} " alt="nothing about business" >
+						</div>
+						<div class="col-12 col-md-5 mb-5 align-self-center pl-5">
+							<h2 style="color: white;" class="headline mb-4">What are you waiting for?</h1>
+							<a class="btn btn-secondary" style="font-size: 18px; border-color: white; color: white; background-color: #551c1c!important;" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devbook-free-bootstrap-4-book-ebook-landing-page-template-for-developers/">BUY IT NOW!</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 </div>
 {% endblock %}
