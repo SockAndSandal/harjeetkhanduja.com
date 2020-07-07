@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display:wght@400;700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 .aboutus{
     display: flex;
@@ -34,7 +35,7 @@ body {
 }
 .aboutus-text {
     color: black;
-    font-family: Lato;
+    font-family: font-family: "Noto Sans Devanagari", "Noto Sans", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -45,7 +46,7 @@ body {
 
 #row-settings1{
     margin-bottom: 20px;
-    background-color: #FDE8E2;
+    background-color: #FFF1F0;
     padding-top: 20px;
     padding-bottom: 20px;
 }

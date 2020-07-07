@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display:wght@400;700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
 
 .brand-title{
     font-family: Playfair Display;
@@ -161,4 +163,8 @@ h6{
 
 .theme-link:hover{
     color: #d3c48d;
+}
+
+.hindi{
+    font-family: "Noto Sans Devanagari", "Noto Sans", sans-serif;
 }
