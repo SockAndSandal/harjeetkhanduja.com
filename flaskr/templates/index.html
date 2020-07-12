@@ -2,7 +2,7 @@
 {% extends "base.html" %}
 
 {% block footer %}
-<div class="footer-bottom text-center py-5">
+<div class="footer-bottom text-center py-1 pb-5">
 	<small class="copyright" style="color: white;">Designed with <i class="fas fa-heart" style="color: white;"></i>  by <a class="theme-link"  style="color: white;" href="https://www.behance.net/amanbeer899" target="_blank" rel="noopener noreferrer">Amanbeer Khanduja</a></small>
 </div>
 {% endblock %}
@@ -21,10 +21,14 @@
               <li data-target="#carouselHK" data-slide-to="0" class="active" data-wrap="true"></li>
               <li data-target="#carouselHK" data-slide-to="1"></li>
               <li data-target="#carouselHK" data-slide-to="2"></li>
+              <li data-target="#carouselHK" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img class="d-block w-100" src="{{ url_for('static', filename = 'img/carousel_home/car1.png') }}" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="{{ url_for('static', filename = 'img/carousel_home/car2.jpg') }}" alt="">
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="{{ url_for('static', filename = 'img/carousel_home/car3.png') }}" alt="">
