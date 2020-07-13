@@ -51,10 +51,6 @@ def book():
         mail.send(msg)
 
 
-
-
-
-
     if form.validate_on_submit():
         flash('Thanks for your interest! Your free book preview will be sent shortly!')
         return redirect('/book') 
