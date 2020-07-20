@@ -1,59 +1,13 @@
-var TxtRotate = function(el, toRotate, period) {
-    this.toRotate = toRotate;
-    this.el = el;
-    this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
-    this.txt = '';
-    this.tick();
-    this.isDeleting = false;
-  };
-  
-  TxtRotate.prototype.tick = function() {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
-  
-    if (this.isDeleting) {
-      this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-      this.txt = fullTxt.substring(0, this.txt.length + 1);
-    }
-  
-    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-  
-    var that = this;
-    var delta = 300 - Math.random() * 100;
-  
-    if (this.isDeleting) { delta /= 2; }
-    else {
-      delta /=2;
-    }
-  
-    if (!this.isDeleting && this.txt === fullTxt) {
-      delta = this.period;
-      this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
-      this.isDeleting = false;
-      this.loopNum++;
-      delta = 2000;
-    }
-  
-    setTimeout(function() {
-      that.tick();
-    }, delta);
-  };
-  
-  window.onload = function() {
-    var elements = document.getElementsByClassName('txt-rotate');
-    for (var i=0; i<elements.length; i++) {
-      var toRotate = elements[i].getAttribute('data-rotate');
-      var period = elements[i].getAttribute('data-period');
-      if (toRotate) {
-        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+$(function () {
+  $(".item col-12 col-lg-4 p-3 mb-4").slice(0, 3).show();
+  $("body").on('click touchstart', '.load-more', function (e) {
+      e.preventDefault();
+      $(".item col-12 col-lg-4 p-3 mb-4:hidden").slice(0, 3).slideDown();
+      if ($(".item col-12 col-lg-4 p-3 mb-4:hidden").length == 0) {
+          $(".load-more").css('visibility', 'hidden');
       }
-    }
-    // INJECT CSS
-    var css = document.createElement("style_contact");
-    css.type = "text/css";
-    document.body.appendChild(css);
-  };
-  
+      $('html,body').animate({
+          scrollTop: $(this).offset().top
+      }, 1000);
+  });
+});
