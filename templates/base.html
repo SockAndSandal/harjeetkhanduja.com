@@ -7,8 +7,11 @@
     <script src="https://kit.fontawesome.com/6c263f6924.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style_about.css') if active_page=='about' else '' }}">
     <link rel="stylesheet" href="{{ url_for('static', filename = 'css/styles_book.css') if active_page=='book' else '' }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style_tuktuk.css') if active_page=='tuktuk' else '' }}">
     <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style_contact.css') if active_page=='contact' else '' }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    {% block head %}
+    {% endblock %}
     <link rel="shortcut icon" href=" {{ url_for('static', filename = 'img/favicon.ico') }}" type="image/x-icon">
     <title>Harjeet Khanduja</title>
   </head>
@@ -28,7 +31,7 @@
             <a class="nav-link {{ 'active' if active_page == 'about' else '' }}" href="/about">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{ 'active' if active_page == 'blog' else '' }}" href="" tabindex="-1">BLOG</a>
+            <a class="nav-link {{ 'active' if active_page == 'blog' else '' }}" href="http://blog.harjeetkhanduja.com" tabindex="-1">BLOG</a>
           </li>
           <li class="nav-item">
             <a class="nav-link {{ 'active' if active_page == 'book' else '' }}" href="/book" tabindex="-1">BOOK</a>
@@ -74,7 +77,7 @@
     
             <div class="col-md-2 mb-3">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="" style="color: white;">BLOG</a>
+                <a href="http://blog.harjeetkhanduja.com" style="color: white;">BLOG</a>
               </h6>
             </div>
     

@@ -11,7 +11,6 @@ class LoginForm(FlaskForm):
 app = Flask(__name__)
 
 
-
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USE_TLS'] = False
@@ -20,6 +19,7 @@ app.config['MAIL_USERNAME'] = 'no-reply@harjeetkhanduja.com'
 app.config['MAIL_PASSWORD'] = 'abcd@1234'
 app.config['MAIL_DEFAULT_SENDER'] = ('Harjeet Khanduja', 'no-reply@harjeetkhanduja.com')
 app.config['MAIL_ASCII_ATTACHMENTS'] = False
+app.config['DEBUG'] = True
 app.secret_key = 'foobarbaz'
 app.jinja_env.trim_blocks = True
 app.jinja_env.lstrip_blocks = True
@@ -53,6 +53,14 @@ def book():
         with app.open_resource("Nothing About Business_Preview.pdf") as fp:
             msg.attach("Nothing About Business_Preview.pdf", "application/pdf", fp.read())
         mail.send(msg)
+
+@app.route('/book/nothing_about_business/')
+def nab():
+    return render_template("nab.html")
+
+@app.route('/book/tuktuk_ki_rail')
+def tuktuk():
+    return render_template("tuktuk.html")
 
 @app.route('/contact/')
 def contact():

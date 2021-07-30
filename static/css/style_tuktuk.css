@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+
+.bro:hover span {
+    display: none;
+  }
+  
+  .bro:hover::before {
+    content: "हरजीत सिंह तुकतुक"!important;
+    font-family: 'Rozha One', serif;
+    font-size: 2vh;
+  }
