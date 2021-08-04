@@ -32,3 +32,9 @@ background: linear-gradient(90deg, #FF3030 0%, #F02271 100%)!important;
   max-width: 40%;
   height: auto;
 }
+
+.card{
+  border-color: #F02271;
+  background: white;
+  border-radius: 0;
+}
