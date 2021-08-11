@@ -1,18 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400&display=swap');
 
 .bg-dark{
 background: linear-gradient(90deg, #FF3030 0%, #F02271 100%)!important;
 }
-
-.bro:hover span {
-    display: none;
-}
-  
-.bro:hover::before {
-    content: "हरजीत सिंह तुकतुक"!important;
-    font-family: 'Rozha One', serif;
-    font-size: 2vh;
-  }
 
 #text{
   max-width: 70%;
@@ -22,9 +13,18 @@ background: linear-gradient(90deg, #FF3030 0%, #F02271 100%)!important;
 }
 
 #illustration{
-  max-width: 60%;
+  max-width: 90%;
   height: auto;
-  margin-top: -55%;
+  margin-top: 2vh;
+}
+
+.static {
+  position:absolute;
+  background: white;
+}
+
+.static:hover {
+  opacity:0;
 }
 
 .recommend{

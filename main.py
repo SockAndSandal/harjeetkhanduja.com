@@ -58,7 +58,7 @@ def book():
 def nab():
     return render_template("nab.html")
 
-@app.route('/book/tuktuk_ki_rail')
+@app.route('/book/tuktuk')
 def tuktuk():
     return render_template("tuktuk.html")
 

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display:wght@400;700&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400&display=swap');
 
 
 .brand-title{
@@ -166,5 +167,5 @@ h6{
 }
 
 .hindi{
-    font-family: "Noto Sans Devanagari", "Noto Sans", sans-serif;
+    font-family: 'Karma', serif;
 }

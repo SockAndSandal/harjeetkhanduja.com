@@ -2,11 +2,11 @@
 {% extends "base.html" %}
 
 {% block head %}
-<!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style_tuktuk.css') }}"> -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style_tuktuk.css') }}">
 {% endblock %}
 
 {% block brand %}
-<a class="navbar-brand brand-title bro" href="/"><span>Harjeet Khanduja</span></a>
+<a class="navbar-brand brand-title" href="/">Harjeet Khanduja</a>
 {% endblock %}
 
 {% block footer %}
@@ -16,124 +16,113 @@
 </div>
 {% endblock %}
 
+
+
 {% block content %}
-<div class="container-fluid">
-    <div class="row" style="background-color: #F7C6D5;">
-        <div class="col-md-4">
+<div class="container-fluid" style="padding: 0">
+    <div class="row" style="background-color: #ffffff;">
+        <div class="col-md-6 col-sm-12">
             <br>
-            <img id="text" src="{{ url_for('static', filename='img/tuktuk/textfin.png') }}" class="img-fluid mx-auto d-block" alt="Illustration of Harjeet Singh Tuktuk" >
+            <img id="text" src="{{ url_for('static', filename='img/tuktuk/textfin.png') }}" class="img-fluid mx-auto d-flex" alt="Illustration of Harjeet Singh Tuktuk" >
             <button class="btn btn-dark mx-auto d-block" style="font-size: medium; padding-left: 30px; padding-right: 30px;">BUY NOW</button>
             <br><br>
         </div>
-        <div class="col-md-8 mx-auto my-auto d-inline-block">
-            <h5 class="hindi" style="margin: 20%; color: #e6b2c2; text-align: justify; user-select: none;">
-                मेरा नाम है तुकतुक क्योंकि मैं तुकबंदी करता हूँ। वैसे मेरे नाम से
-    थाईलैंड में ऑटो भी चलते हैं। पिछले 30 साल में कुछ 100 कविताएँ
-    लिखीं हैं। यह पुस्तक मेरे कविता के पूरे सफ़र को चित्रित करती है।
-    जिन कविताओं को लोगों का सबसे ज़्यादा प्यार मिला, अधिकतर रेल
-    में बैठ कर लिखीं है। मेरे पहले टीवी कार्यक्रम का नाम था फुलझड़ी
-    एक्सप्रेस। मेरी शुरू की कविताएँ हंगामा एक्सप्रेस और गुदगुदी एक्सप्रेस
-    में प्रकाशित हुईं हैं। तो सोचा किताब के नाम में कहीं रेल तो होनी
-    चाहिए। सो बन गया नाम तुकतुक की रेल।
-    मेरा परिवार एक साहित्यिक परिवार है। मेरे पिता जी दोहे लिखते हैं।
-मेरी माता जी नई कविता लिखतीं थीं। मेरा भाई शायर है। घर में केवल
-मैं एक नकारा था, जो कुछ नहीं लिखता था। मेरा परिवार जब कवि
-गोष्ठी में जाता था तो मुझे घर छोड़ जाता था। इससे मेरे आत्मसम्मान
-को बहुत चोट पहुँचती थी। इस लिए मैंने लिखना शुरू किया।
-पहली कवि गोष्ठी में जब मैंने कविता सुनाई तो उन्होंने मुझे
-बताया की कविता में छंद दोष है। सो अगली बार मैंने अपनी तरफ़ से
-छंद मुक्त कविता लिखी, मैंने कहा यह मुक्तक है। तो मुझे समझाया
-गया की मुक्तक भी छंद मुक्त नहीं होता।
-            </h5>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4" style="justify-content: center; align-items: flex-start; display: flex;">
-        </div>
-        <div class="col-md-8 mx-auto" style="justify-content: center; display: flex;">
-            <img src="{{ url_for('static', filename='img/tuktuk/illustration.png') }} " id="illustration" style="user-select: none;" class="img-fluid" alt="Illustration of Harjeet Singh Tuktuk" >
+        <div class="col-md-6 col-sm-12 d-sm-none d-md-block">
+          <img src="{{ url_for('static', filename='img/tuktuk/illustration2.png') }} " id="illustration" style="z-index: 1;" class="img-fluid" alt="Illustration of Harjeet Singh Tuktuk" >
+          <!-- <img src="{{ url_for('static', filename='img/tuktuk/illustration-active.gif') }}" style="z-index: 0; max-width:90%; margin-top: 5vh;" class="img-fluid active" alt="Illustration of Harjeet Singh Tuktuk" > -->
         </div>
     </div>
     <br><br>
-    <section style="background-color: #F7C6D5;">
-        <div class="container py-5 h-100">
-          <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="card-deck">
-              <div class="card rounded-3">
-                <div class="card-body p-5">
-      
-                  <div class="d-flex justify-content-center mb-4">
-                    <img
+    <div class="container">
+      <hr>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <h1 class="hindi"></h1>
+          <br><br>
+          <h4 class="hindi" style="text-align:center">अगर आप हँसना चाहते हैं, हंसिए तुकतुक के साथ।तुकतुक की विश्व प्रसिद्द कवितायें आपको हंसायेंगी भी, गुदगुदायेंगी भी और आप के मन को छुएँगी भी। तुकतुक को हास्य सम्राट यूँ ही नहीं कहते। तो सोच क्या रहे हैं, अभी सवार हो जाइये तुकतुक की रेल पर।शुभ यात्रा।
+          </h4>
+        </div>
+
+      </div>
+      <br><br><br>
+    </div>
+    <div style="background-color: #e8455b;">
+      <br><br>
+        <h1 class="hindi" style="font-size:5vh; color: white; padding-top: 1%; text-align: center;">गुणीजनों की राय</h1>
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="card-deck">
+            <div class="card rounded-3">
+              <div class="card-body p-5">
+                <div class="d-flex justify-content-center mb-4">
+                  <img
                       src="{{ url_for('static', filename='img/tuktuk/rec2.png') }}"
                       class="rounded-circle shadow-1-strong"
                       width="150"
                       height="150"
-                    />
+                  />
                   </div>
-                  <figure class="text-center mb-0">
-                    <blockquote class="blockquote mb-4">
-                      <h4>
-                        <span class="hindi">आप तुकतुक की रेल में बैठेंगे तो हसेंगे भी और साथ में कुछ लेके भी जाएँगे।</span>
-                      </h4>
-                    </blockquote>
-                    <figcaption class="blockquote-footer mb-0">
-                      <div class="hindi">उत्तम सिंह, म्यूज़िक डायरेक्टर</div> (Uttam Singh)
-                    </figcaption>
-                  </figure>
+                <figure class="text-center mb-0">
+                  <blockquote class="blockquote mb-4">
+                    <h4>
+                      <span class="hindi">आप तुकतुक की रेल में बैठेंगे तो हसेंगे भी और साथ में कुछ लेके भी जाएँगे।</span>
+                    </h4>
+                  </blockquote>
+                  <figcaption class="blockquote-footer mb-0">
+                    <div class="hindi">उत्तम सिंह, म्यूज़िक डायरेक्टर</div> (Uttam Singh)
+                  </figcaption>
+                </figure>
                   
-                </div>
               </div>
-              <div class="card rounded-3">
-                <div class="card-body p-5">
-      
-                  <div class="d-flex justify-content-center mb-4">
-                    <img
-                      src="{{ url_for('static', filename='img/tuktuk/rec1.png') }}"
-                      class="rounded-circle shadow-1-strong"
-                      width="150"
-                      height="150"
-                    />
-                  </div>
-                  <figure class="text-center mb-0">
-                    <blockquote class="blockquote mb-4">
-                      <h4>
-                        <span class="hindi">तुकतुक की कविता में कमाल का करामाती कौशल है।</span>
-                      </h4>
-                    </blockquote>
-                    <figcaption class="blockquote-footer mb-0">
-                      <div class="hindi">अशोक चक्रधर</div> (Ashok Chakradhar)
-                    </figcaption>
-                  </figure>
-                  
-                </div>
-              </div>
-              <div class="card rounded-3">
-                <div class="card-body p-5">
-      
-                  <div class="d-flex justify-content-center mb-4">
-                    <img
-                      src="{{ url_for('static', filename='img/tuktuk/rec3.jpg') }}"
-                      class="rounded-circle shadow-1-strong"
-                      width="150"
-                      height="150"
-                    />
-                  </div>
-                  <figure class="text-center mb-0">
-                    <blockquote class="blockquote mb-4">
-                      <h4>
-                        <span class="hindi">तुकतुक की रेल के लिए हमारे हिंदी मंचों के लाड़ले कवि को अनंत शुभकामनाएं|</span>
-                      </h4>
-                    </blockquote>
-                    <figcaption class="blockquote-footer mb-0">
-                      <div class="hindi">अभिनव शुक्ल, अंतर्रष्ट्रीय हिंदी कवि                      </div> (Abhinav Shukl)
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>      
             </div>
+            <div class="card rounded-3">
+              <div class="card-body p-5">
+                <div class="d-flex justify-content-center mb-4">
+                  <img
+                    src="{{ url_for('static', filename='img/tuktuk/rec1.png') }}"
+                    class="rounded-circle shadow-1-strong"
+                    width="150"
+                    height="150"
+                  />
+                </div>
+                <figure class="text-center mb-0">
+                  <blockquote class="blockquote mb-4">
+                    <h4>
+                      <span class="hindi">तुकतुक की कविता में कमाल का करामाती कौशल है।</span>
+                    </h4>
+                  </blockquote>
+                  <figcaption class="blockquote-footer mb-0">
+                    <div class="hindi">अशोक चक्रधर</div> (Ashok Chakradhar)
+                  </figcaption>
+                </figure>           
+              </div>
+            </div>
+            <div class="card rounded-3">
+              <div class="card-body p-5">
+                <div class="d-flex justify-content-center mb-4">
+                  <img
+                    src="{{ url_for('static', filename='img/tuktuk/rec3.jpg') }}"
+                    class="rounded-circle shadow-1-strong"
+                    width="150"
+                    height="150"
+                  />
+                </div>
+                <figure class="text-center mb-0">
+                  <blockquote class="blockquote mb-4">
+                    <h4>
+                      <span class="hindi">तुकतुक की रेल के लिए हमारे हिंदी मंचों के लाड़ले कवि को अनंत शुभकामनाएं|</span>
+                    </h4>
+                  </blockquote>
+                  <figcaption class="blockquote-footer mb-0">
+                    <div class="hindi">अभिनव शुक्ल, अंतर्रष्ट्रीय हिंदी कवि</div> (Abhinav Shukl)
+                  </figcaption>
+                </figure>
+              </div>
+            </div>      
           </div>
         </div>
-      </section>
+      </div>
+    </div>
 
 
       <div class="row">
