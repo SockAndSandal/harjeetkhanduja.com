@@ -36,11 +36,11 @@ def home():
 def about():
     return render_template("about.html")
 
-@app.route('/book/', methods = ['GET', 'POST'])
-def book():
+@app.route('/book/nab', methods = ['GET', 'POST'])
+def nab():
     form = LoginForm()
     if request.method == 'GET':
-        return render_template('book.html', form = form)
+        return render_template('nab.html', form = form)
 
     if request.method == 'POST':
         if form.validate_on_submit():
@@ -53,10 +53,6 @@ def book():
         with app.open_resource("Nothing About Business_Preview.pdf") as fp:
             msg.attach("Nothing About Business_Preview.pdf", "application/pdf", fp.read())
         mail.send(msg)
-
-@app.route('/book/nothing_about_business/')
-def nab():
-    return render_template("nab.html")
 
 @app.route('/book/tuktuk')
 def tuktuk():

@@ -30,11 +30,18 @@
           <li class="nav-item">
             <a class="nav-link {{ 'active' if active_page == 'about' else '' }}" href="/about">ABOUT</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link {{ 'active' if active_page == 'blog' else '' }}" href="http://blog.harjeetkhanduja.com" tabindex="-1">BLOG</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              BOOKS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="{{ url_for('nab') }}">Nothing about Business</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="{{ url_for('tuktuk') }}">Tuktuk ki Rail</a>
+            </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{ 'active' if active_page == 'book' else '' }}" href="/book" tabindex="-1">BOOK</a>
+            <a class="nav-link {{ 'active' if active_page == 'blog' else '' }}" href="http://blog.harjeetkhanduja.com" tabindex="-1">BLOG</a>
           </li>
           <li class="nav-item">
             <a class="nav-link {{ 'active' if active_page == 'contact' else '' }}" href="/contact" tabindex="-1">CONTACT</a>

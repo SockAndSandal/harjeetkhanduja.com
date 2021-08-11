@@ -108,6 +108,31 @@
   <section id="book-section">
     <div class="container">
       <div class="row">
+        <div class="col-12 col-md-5 mb-5 align-self-center">
+          <div class="book-cover-holder">
+            <img class="img-fluid book-cover" style="margin-left: -3vw;" src="{{ url_for('static', filename = 'img/tuktuk/tuktuk.png') }}" alt="nothing about business" >
+          </div>
+        </div>
+        <div class="col-12 col-md-7 pt-5 mb-5 align-self-center">
+          <div class="promo pr-md-3 pr-lg-5">
+            <h1 class="headline mb-3 hindi">
+              <strong>तुकतुक की रेल</strong>   
+            </h1>
+            <div class="subheadline mb-4 hindi" style="font-size: larger;">
+              अगर आप हँसना चाहते हैं, हंसिए तुकतुक के साथ।तुकतुक की विश्व प्रसिद्द कवितायें आपको हंसायेंगी भी, गुदगुदायेंगी भी और आप के मन को छुएँगी भी। तुकतुक को हास्य सम्राट यूँ ही नहीं कहते। तो सोच क्या रहे हैं, अभी सवार हो जाइये तुकतुक की रेल पर।शुभ यात्रा।
+            </div>
+            
+            <div class="cta-holder">
+              <a class="btn btn-dark mr-lg-2" href="https://www.amazon.com/dp/B08CNG6VR5">BUY NOW</a>
+              <a class="btn btn-secondary mr-lg-2" href="{{ url_for('tuktuk') }}">LEARN MORE</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
         <div class="col-12 col-md-7 pt-5 mb-5 align-self-center">
           <div class="promo pr-md-3 pr-lg-5">
             <h1 class="headline mb-3">
@@ -119,13 +144,13 @@
             
             <div class="cta-holder">
               <a class="btn btn-dark mr-lg-2" href="https://www.amazon.com/dp/B08CNG6VR5">BUY NOW</a>
-              <a class="btn btn-secondary mr-lg-2" href="/book">LEARN MORE</a>
+              <a class="btn btn-secondary mr-lg-2" href="{{ url_for('nab') }}">LEARN MORE</a>
           </div>
           </div>
         </div>
         <div class="col-12 col-md-5 mb-5 align-self-center">
           <div class="book-cover-holder">
-            <img class="img-fluid book-cover" src="{{ url_for('static', filename = 'img/nab.png') }}" alt="nothing about business" >
+            <img class="img-fluid book-cover" src="{{ url_for('static', filename = 'img/nab.png') }}" alt="Tuktuk Ki Rail" >
           </div>
         </div>
       </div>
