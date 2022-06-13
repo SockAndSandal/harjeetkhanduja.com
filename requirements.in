@@ -1,0 +1,7 @@
+flask
+flask-mail
+flask-wtf
+flask-SQLAlchemy
+gunicorn
+lazy-object-proxy
+python-dateutil

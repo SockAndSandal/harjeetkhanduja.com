@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400&display=swap');
+
+.bg-dark{
+background: linear-gradient(90deg, #FF3030 0%, #F02271 100%)!important;
+}
+
+#text{
+  max-width: 70%;
+  height: auto;
+  margin-top: 10%; 
+  margin-bottom: 10%;
+}
+
+#illustration{
+  max-width: 90%;
+  height: auto;
+  margin-top: 2vh;
+}
+
+.static {
+  position:absolute;
+  background: white;
+}
+
+.static:hover {
+  opacity:0;
+}
+
+.recommend{
+  display: block;
+  max-width: 40%;
+  height: auto;
+}
+
+.card{
+  border-color: #F02271;
+  background: white;
+  border-radius: 0;
+}

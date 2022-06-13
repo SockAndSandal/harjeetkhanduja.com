@@ -11,7 +11,6 @@ class LoginForm(FlaskForm):
 app = Flask(__name__)
 
 
-
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USE_TLS'] = False
@@ -20,6 +19,7 @@ app.config['MAIL_USERNAME'] = 'no-reply@harjeetkhanduja.com'
 app.config['MAIL_PASSWORD'] = 'abcd@1234'
 app.config['MAIL_DEFAULT_SENDER'] = ('Harjeet Khanduja', 'no-reply@harjeetkhanduja.com')
 app.config['MAIL_ASCII_ATTACHMENTS'] = False
+app.config['DEBUG'] = True
 app.secret_key = 'foobarbaz'
 app.jinja_env.trim_blocks = True
 app.jinja_env.lstrip_blocks = True
@@ -36,11 +36,11 @@ def home():
 def about():
     return render_template("about.html")
 
-@app.route('/book/', methods = ['GET', 'POST'])
-def book():
+@app.route('/book/nab', methods = ['GET', 'POST'])
+def nab():
     form = LoginForm()
     if request.method == 'GET':
-        return render_template('book.html', form = form)
+        return render_template('nab.html', form = form)
 
     if request.method == 'POST':
         if form.validate_on_submit():
@@ -53,6 +53,10 @@ def book():
         with app.open_resource("Nothing About Business_Preview.pdf") as fp:
             msg.attach("Nothing About Business_Preview.pdf", "application/pdf", fp.read())
         mail.send(msg)
+
+@app.route('/book/tuktuk')
+def tuktuk():
+    return render_template("tuktuk.html")
 
 @app.route('/contact/')
 def contact():

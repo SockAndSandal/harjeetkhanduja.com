@@ -1,0 +1,135 @@
+{% set active_page = "tuktuk" %}
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style_tuktuk.css') }}">
+{% endblock %}
+
+{% block brand %}
+<a class="navbar-brand brand-title" href="/">Harjeet Khanduja</a>
+{% endblock %}
+
+{% block footer %}
+<div class="footer-bottom text-center py-1 pb-5">
+	<small class="copyright" style="color: white;">Designed with <i class="fas fa-heart" style="color: white;"></i>  by <a class="theme-link"  style="color: white;" href="https://www.behance.net/amanbeer899" target="_blank" rel="noopener noreferrer">Amanbeer Khanduja.</a></small>
+    <small class="copyright" style="color: white;">Illustration by Hunaid Nagaria.</small>
+</div>
+{% endblock %}
+
+
+
+{% block content %}
+<div class="container-fluid" style="padding: 0">
+    <div class="row" style="background-color: #ffffff;">
+        <div class="col-md-6 col-sm-12">
+            <br>
+            <img id="text" src="{{ url_for('static', filename='img/tuktuk/textfin.png') }}" class="img-fluid mx-auto d-flex" alt="Illustration of Harjeet Singh Tuktuk" >
+            <a href="https://www.amazon.in/TUKTUK-KI-RAIL-HARJEET-SINGH/dp/9355000170/ref=sr_1_1?dchild=1&keywords=tuktuk+ki+rail&qid=1632371003&sr=8-1" target="_blank" rel="noopener noreferrer"><button class="btn btn-dark mx-auto d-block" style="font-size: medium; padding-left: 30px; padding-right: 30px;">BUY NOW</button></a>
+            <br><br>
+        </div>
+        <div class="col-md-6 col-sm-12 d-sm-none d-md-block">
+          <img src="{{ url_for('static', filename='img/tuktuk/illustration2.png') }} " id="illustration" style="z-index: 1;" class="img-fluid" alt="Illustration of Harjeet Singh Tuktuk" >
+          <!-- <img src="{{ url_for('static', filename='img/tuktuk/illustration-active.gif') }}" style="z-index: 0; max-width:90%; margin-top: 5vh;" class="img-fluid active" alt="Illustration of Harjeet Singh Tuktuk" > -->
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+      <hr>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <h1 class="hindi"></h1>
+          <br><br>
+          <h4 class="hindi" style="text-align:center">à¤à¤à¤° à¤à¤ª à¤¹à¤à¤¸à¤¨à¤¾ à¤à¤¾à¤¹à¤¤à¥ à¤¹à¥à¤, à¤¹à¤à¤¸à¤¿à¤ à¤¤à¥à¤à¤¤à¥à¤ à¤à¥ à¤¸à¤¾à¤¥à¥¤à¤¤à¥à¤à¤¤à¥à¤ à¤à¥ à¤µà¤¿à¤¶à¥à¤µ à¤ªà¥à¤°à¤¸à¤¿à¤¦à¥à¤¦ à¤à¤µà¤¿à¤¤à¤¾à¤¯à¥à¤ à¤à¤ªà¤à¥ à¤¹à¤à¤¸à¤¾à¤¯à¥à¤à¤à¥ à¤­à¥, à¤à¥à¤¦à¤à¥à¤¦à¤¾à¤¯à¥à¤à¤à¥ à¤­à¥ à¤à¤° à¤à¤ª à¤à¥ à¤®à¤¨ à¤à¥ à¤à¥à¤à¤à¤à¥ à¤­à¥à¥¤ à¤¤à¥à¤à¤¤à¥à¤ à¤à¥ à¤¹à¤¾à¤¸à¥à¤¯ à¤¸à¤®à¥à¤°à¤¾à¤ à¤¯à¥à¤ à¤¹à¥ à¤¨à¤¹à¥à¤ à¤à¤¹à¤¤à¥à¥¤ à¤¤à¥ à¤¸à¥à¤ à¤à¥à¤¯à¤¾ à¤°à¤¹à¥ à¤¹à¥à¤, à¤à¤­à¥ à¤¸à¤µà¤¾à¤° à¤¹à¥ à¤à¤¾à¤à¤¯à¥ à¤¤à¥à¤à¤¤à¥à¤ à¤à¥ à¤°à¥à¤² à¤ªà¤°à¥¤<br>à¤¶à¥à¤­ à¤¯à¤¾à¤¤à¥à¤°à¤¾à¥¤
+          </h4>
+        </div>
+
+      </div>
+      <br><br><br>
+    </div>
+    <div style="background-color: #e8455b;">
+      <br><br>
+        <h1 class="hindi" style="font-size:5vh; color: white; padding-top: 1%; text-align: center;">à¤à¥à¤£à¥à¤à¤¨à¥à¤ à¤à¥ à¤°à¤¾à¤¯</h1>
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="card-deck">
+            <div class="card rounded-3">
+              <div class="card-body p-5">
+                <div class="d-flex justify-content-center mb-4">
+                  <img
+                      src="{{ url_for('static', filename='img/tuktuk/rec2.png') }}"
+                      class="rounded-circle shadow-1-strong"
+                      width="150"
+                      height="150"
+                  />
+                  </div>
+                <figure class="text-center mb-0">
+                  <blockquote class="blockquote mb-4">
+                    <h4>
+                      <span class="hindi">à¤à¤ª à¤¤à¥à¤à¤¤à¥à¤ à¤à¥ à¤°à¥à¤² à¤®à¥à¤ à¤¬à¥à¤ à¥à¤à¤à¥ à¤¤à¥ à¤¹à¤¸à¥à¤à¤à¥ à¤­à¥ à¤à¤° à¤¸à¤¾à¤¥ à¤®à¥à¤ à¤à¥à¤ à¤²à¥à¤à¥ à¤­à¥ à¤à¤¾à¤à¤à¤à¥à¥¤</span>
+                    </h4>
+                  </blockquote>
+                  <figcaption class="blockquote-footer mb-0">
+                    <div class="hindi">à¤à¤¤à¥à¤¤à¤® à¤¸à¤¿à¤à¤¹, à¤®à¥à¤¯à¥à¤à¤¼à¤¿à¤ à¤¡à¤¾à¤¯à¤°à¥à¤à¥à¤à¤°</div> (Uttam Singh)
+                  </figcaption>
+                </figure>
+                  
+              </div>
+            </div>
+            <div class="card rounded-3">
+              <div class="card-body p-5">
+                <div class="d-flex justify-content-center mb-4">
+                  <img
+                    src="{{ url_for('static', filename='img/tuktuk/rec1.png') }}"
+                    class="rounded-circle shadow-1-strong"
+                    width="150"
+                    height="150"
+                  />
+                </div>
+                <figure class="text-center mb-0">
+                  <blockquote class="blockquote mb-4">
+                    <h4>
+                      <span class="hindi">à¤¤à¥à¤à¤¤à¥à¤ à¤à¥ à¤à¤µà¤¿à¤¤à¤¾ à¤®à¥à¤ à¤à¤®à¤¾à¤² à¤à¤¾ à¤à¤°à¤¾à¤®à¤¾à¤¤à¥ à¤à¥à¤¶à¤² à¤¹à¥à¥¤</span>
+                    </h4>
+                  </blockquote>
+                  <figcaption class="blockquote-footer mb-0">
+                    <div class="hindi">à¤à¤¶à¥à¤ à¤à¤à¥à¤°à¤§à¤°</div> (Ashok Chakradhar)
+                  </figcaption>
+                </figure>           
+              </div>
+            </div>
+            <div class="card rounded-3">
+              <div class="card-body p-5">
+                <div class="d-flex justify-content-center mb-4">
+                  <img
+                    src="{{ url_for('static', filename='img/tuktuk/rec3.jpg') }}"
+                    class="rounded-circle shadow-1-strong"
+                    width="150"
+                    height="150"
+                  />
+                </div>
+                <figure class="text-center mb-0">
+                  <blockquote class="blockquote mb-4">
+                    <h4>
+                      <span class="hindi">à¤¤à¥à¤à¤¤à¥à¤ à¤à¥ à¤°à¥à¤² à¤à¥ à¤²à¤¿à¤ à¤¹à¤®à¤¾à¤°à¥ à¤¹à¤¿à¤à¤¦à¥ à¤®à¤à¤à¥à¤ à¤à¥ à¤²à¤¾à¤¡à¤¼à¤²à¥ à¤à¤µà¤¿ à¤à¥ à¤à¤¨à¤à¤¤ à¤¶à¥à¤­à¤à¤¾à¤®à¤¨à¤¾à¤à¤|</span>
+                    </h4>
+                  </blockquote>
+                  <figcaption class="blockquote-footer mb-0">
+                    <div class="hindi">à¤à¤­à¤¿à¤¨à¤µ à¤¶à¥à¤à¥à¤², à¤à¤à¤¤à¤°à¥à¤°à¤·à¥à¤à¥à¤°à¥à¤¯ à¤¹à¤¿à¤à¤¦à¥ à¤à¤µà¤¿</div> (Abhinav Shukl)
+                  </figcaption>
+                </figure>
+              </div>
+            </div>      
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <div class="row">
+        <div class="col-md-12">
+            <img src="{{ url_for('static', filename='img/tuktuk/footer.png') }}" style="max-width: 50%; height:auto" class="img-fluid mx-auto d-block" alt="Harjeet Singh Tuktuk" >
+        </div>
+    </div>
+</div>
+{% endblock %}
+
