@@ -13,7 +13,7 @@
     <title>Harjeet Khanduja</title>
   </head>
   <body>
-
+    <div class="container-flex">
     <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
         {% block brand %}{% endblock %}
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,11 +27,20 @@
           <li class="nav-item">
             <a class="nav-link {{ 'active' if active_page == 'about' else '' }}" href="/about">ABOUT</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link {{ 'active' if active_page == 'blog' else '' }}" href="" tabindex="-1">BLOG</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              BOOKS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/book/how_leaders_decide">HOW LEADERS DECIDE</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" style="word-wrap: normal;" href="/book/nab">NOTHING ABOUT BUSINESS</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/book/tuktuk">TUKTUK KI RAIL</a>
+            </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{ 'active' if active_page == 'book' else '' }}" href="/book" tabindex="-1">BOOK</a>
+            <a class="nav-link {{ 'active' if active_page == 'blog' else '' }}" href="" tabindex="-1">BLOG</a>
           </li>
           <li class="nav-item">
             <a class="nav-link {{ 'active' if active_page == 'contact' else '' }}" href="/contact" tabindex="-1">CONTACT</a>
@@ -39,6 +48,8 @@
         </ul>
       </div>
     </nav>
+  </div>
+
   <div class="flashed text-center">
     {% with messages = get_flashed_messages() %}
     {% if messages %}

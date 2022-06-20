@@ -10,7 +10,6 @@ class LoginForm(FlaskForm):
 
 app = Flask(__name__)
 
-
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USE_TLS'] = False
@@ -57,6 +56,14 @@ def nab():
 @app.route('/book/tuktuk')
 def tuktuk():
     return render_template("tuktuk.html")
+
+@app.route('/book/how_leaders_decide')
+def leaders():
+    return render_template("leaders.html")
+
+@app.route('/blog')
+def blog():
+    return redirect('http://blog.harjeetkhanduja.com/')
 
 @app.route('/contact/')
 def contact():
