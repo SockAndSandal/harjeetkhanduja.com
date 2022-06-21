@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400&display=swap');
 
 .bg-dark{
-background: linear-gradient(90deg, #FF3030 0%, #F02271 100%)!important;
+background-color: linear-gradient(90deg, #FF3030 0%, #F02271 100%)!important;
 }
 
 #text{

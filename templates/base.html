@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/6c263f6924.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style_about.css') if active_page=='about' else '' }}">
     <link rel="stylesheet" href="{{ url_for('static', filename = 'css/styles_book.css') if active_page=='book' else '' }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style_tuktuk.css') if active_page=='tuktuk' else '' }}">
     <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style_contact.css') if active_page=='contact' else '' }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <link rel="shortcut icon" href=" {{ url_for('static', filename = 'img/favicon.ico') }}" type="image/x-icon">
@@ -40,7 +41,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{ 'active' if active_page == 'blog' else '' }}" href="" tabindex="-1">BLOG</a>
+            <a class="nav-link {{ 'active' if active_page == 'blog' else '' }}" href="/blog" tabindex="-1">BLOG</a>
           </li>
           <li class="nav-item">
             <a class="nav-link {{ 'active' if active_page == 'contact' else '' }}" href="/contact" tabindex="-1">CONTACT</a>
@@ -91,7 +92,7 @@
     
             <div class="col-md-2 mb-3">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="/book" style="color: white;">BOOK</a>
+                <a href="/book/how_leaders_decide" style="color: white;">BOOKS</a>
               </h6>
             </div>
     

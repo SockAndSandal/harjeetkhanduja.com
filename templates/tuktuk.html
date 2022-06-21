@@ -1,10 +1,6 @@
 {% set active_page = "tuktuk" %}
 {% extends "base.html" %}
 
-{% block head %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style_tuktuk.css') }}">
-{% endblock %}
-
 {% block brand %}
 <a class="navbar-brand brand-title" href="/">Harjeet Khanduja</a>
 {% endblock %}
@@ -16,18 +12,19 @@
 </div>
 {% endblock %}
 
-
-
 {% block content %}
 <div class="container-fluid" style="padding: 0">
     <div class="row" style="background-color: #ffffff;">
-        <div class="col-md-6 col-sm-12">
-            <br>
-            <img id="text" src="{{ url_for('static', filename='img/tuktuk/textfin.png') }}" class="img-fluid mx-auto d-flex" alt="Illustration of Harjeet Singh Tuktuk" >
+        <div class="col-md-5 col-sm-12">
+            <br><br><br><br><br>
+            <br><br>
+            <img style="padding-left: 2em; padding-right: 2em;" id="text" src="{{ url_for('static', filename='img/tuktuk/textfin.png') }}" class="img-fluid mx-auto d-flex" alt="Illustration of Harjeet Singh Tuktuk" >
+            <br><br>
             <a href="https://www.amazon.in/TUKTUK-KI-RAIL-HARJEET-SINGH/dp/9355000170/ref=sr_1_1?dchild=1&keywords=tuktuk+ki+rail&qid=1632371003&sr=8-1" target="_blank" rel="noopener noreferrer"><button class="btn btn-dark mx-auto d-block" style="font-size: medium; padding-left: 30px; padding-right: 30px;">BUY NOW</button></a>
             <br><br>
         </div>
-        <div class="col-md-6 col-sm-12 d-sm-none d-md-block">
+        <div class="col-md-7 col-sm-12 d-sm-none d-md-block">
+          <br><br>
           <img src="{{ url_for('static', filename='img/tuktuk/illustration2.png') }} " id="illustration" style="z-index: 1;" class="img-fluid" alt="Illustration of Harjeet Singh Tuktuk" >
           <!-- <img src="{{ url_for('static', filename='img/tuktuk/illustration-active.gif') }}" style="z-index: 0; max-width:90%; margin-top: 5vh;" class="img-fluid active" alt="Illustration of Harjeet Singh Tuktuk" > -->
         </div>
@@ -39,7 +36,9 @@
         <div class="col-md-6 mx-auto">
           <h1 class="hindi"></h1>
           <br><br>
-          <h4 class="hindi" style="text-align:center">à¤à¤à¤° à¤à¤ª à¤¹à¤à¤¸à¤¨à¤¾ à¤à¤¾à¤¹à¤¤à¥ à¤¹à¥à¤, à¤¹à¤à¤¸à¤¿à¤ à¤¤à¥à¤à¤¤à¥à¤ à¤à¥ à¤¸à¤¾à¤¥à¥¤à¤¤à¥à¤à¤¤à¥à¤ à¤à¥ à¤µà¤¿à¤¶à¥à¤µ à¤ªà¥à¤°à¤¸à¤¿à¤¦à¥à¤¦ à¤à¤µà¤¿à¤¤à¤¾à¤¯à¥à¤ à¤à¤ªà¤à¥ à¤¹à¤à¤¸à¤¾à¤¯à¥à¤à¤à¥ à¤­à¥, à¤à¥à¤¦à¤à¥à¤¦à¤¾à¤¯à¥à¤à¤à¥ à¤­à¥ à¤à¤° à¤à¤ª à¤à¥ à¤®à¤¨ à¤à¥ à¤à¥à¤à¤à¤à¥ à¤­à¥à¥¤ à¤¤à¥à¤à¤¤à¥à¤ à¤à¥ à¤¹à¤¾à¤¸à¥à¤¯ à¤¸à¤®à¥à¤°à¤¾à¤ à¤¯à¥à¤ à¤¹à¥ à¤¨à¤¹à¥à¤ à¤à¤¹à¤¤à¥à¥¤ à¤¤à¥ à¤¸à¥à¤ à¤à¥à¤¯à¤¾ à¤°à¤¹à¥ à¤¹à¥à¤, à¤à¤­à¥ à¤¸à¤µà¤¾à¤° à¤¹à¥ à¤à¤¾à¤à¤¯à¥ à¤¤à¥à¤à¤¤à¥à¤ à¤à¥ à¤°à¥à¤² à¤ªà¤°à¥¤<br>à¤¶à¥à¤­ à¤¯à¤¾à¤¤à¥à¤°à¤¾à¥¤
+          <h4 class="hindi" style="text-align:center">
+            अगर आप हँसना चाहते हैं, हंसिए तुकतुक के साथ! <br>
+            तुकतुक की विश्व प्रसिद्द कवितायें आपको हंसायेंगी भी, गुदगुदायेंगी भी और आप के मन को छुएँगी भी। तुकतुक को हास्य सम्राट यूँ ही नहीं कहते। तो सोच क्या रहे हैं, अभी सवार हो जाइये तुकतुक की रेल पर। शुभ यात्रा।
           </h4>
         </div>
 
@@ -48,7 +47,7 @@
     </div>
     <div style="background-color: #e8455b;">
       <br><br>
-        <h1 class="hindi" style="font-size:5vh; color: white; padding-top: 1%; text-align: center;">à¤à¥à¤£à¥à¤à¤¨à¥à¤ à¤à¥ à¤°à¤¾à¤¯</h1>
+        <h1 class="hindi" style="font-size:5vh; color: white; padding-top: 1%; text-align: center;">गुणीजनों की राय</h1>
       <div class="container py-5 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="card-deck">
@@ -65,11 +64,11 @@
                 <figure class="text-center mb-0">
                   <blockquote class="blockquote mb-4">
                     <h4>
-                      <span class="hindi">à¤à¤ª à¤¤à¥à¤à¤¤à¥à¤ à¤à¥ à¤°à¥à¤² à¤®à¥à¤ à¤¬à¥à¤ à¥à¤à¤à¥ à¤¤à¥ à¤¹à¤¸à¥à¤à¤à¥ à¤­à¥ à¤à¤° à¤¸à¤¾à¤¥ à¤®à¥à¤ à¤à¥à¤ à¤²à¥à¤à¥ à¤­à¥ à¤à¤¾à¤à¤à¤à¥à¥¤</span>
+                      <span class="hindi">आप तुकतुक की रेल में बैठेंगे तो हसेंगे भी और साथ में कुछ लेके भी जाएँगे।</span>
                     </h4>
                   </blockquote>
                   <figcaption class="blockquote-footer mb-0">
-                    <div class="hindi">à¤à¤¤à¥à¤¤à¤® à¤¸à¤¿à¤à¤¹, à¤®à¥à¤¯à¥à¤à¤¼à¤¿à¤ à¤¡à¤¾à¤¯à¤°à¥à¤à¥à¤à¤°</div> (Uttam Singh)
+                    <div class="hindi">उत्तम सिंह, संगीत निर्देशक</div> (Uttam Singh)
                   </figcaption>
                 </figure>
                   
@@ -88,11 +87,12 @@
                 <figure class="text-center mb-0">
                   <blockquote class="blockquote mb-4">
                     <h4>
-                      <span class="hindi">à¤¤à¥à¤à¤¤à¥à¤ à¤à¥ à¤à¤µà¤¿à¤¤à¤¾ à¤®à¥à¤ à¤à¤®à¤¾à¤² à¤à¤¾ à¤à¤°à¤¾à¤®à¤¾à¤¤à¥ à¤à¥à¤¶à¤² à¤¹à¥à¥¤</span>
+                      <span class="hindi">तुकतुक की कविता में कमाल का करामाती कौशल है।</span>
                     </h4>
                   </blockquote>
+                  <br>
                   <figcaption class="blockquote-footer mb-0">
-                    <div class="hindi">à¤à¤¶à¥à¤ à¤à¤à¥à¤°à¤§à¤°</div> (Ashok Chakradhar)
+                    <div class="hindi">अशोक चक्रधर</div> (Ashok Chakradhar)
                   </figcaption>
                 </figure>           
               </div>
@@ -110,11 +110,11 @@
                 <figure class="text-center mb-0">
                   <blockquote class="blockquote mb-4">
                     <h4>
-                      <span class="hindi">à¤¤à¥à¤à¤¤à¥à¤ à¤à¥ à¤°à¥à¤² à¤à¥ à¤²à¤¿à¤ à¤¹à¤®à¤¾à¤°à¥ à¤¹à¤¿à¤à¤¦à¥ à¤®à¤à¤à¥à¤ à¤à¥ à¤²à¤¾à¤¡à¤¼à¤²à¥ à¤à¤µà¤¿ à¤à¥ à¤à¤¨à¤à¤¤ à¤¶à¥à¤­à¤à¤¾à¤®à¤¨à¤¾à¤à¤|</span>
+                      <span class="hindi">तुकतुक की रेल के लिए हमारे हिंदी मंचों के लाड़ले कवि को अनंत शुभकामनाएं|</span>
                     </h4>
                   </blockquote>
                   <figcaption class="blockquote-footer mb-0">
-                    <div class="hindi">à¤à¤­à¤¿à¤¨à¤µ à¤¶à¥à¤à¥à¤², à¤à¤à¤¤à¤°à¥à¤°à¤·à¥à¤à¥à¤°à¥à¤¯ à¤¹à¤¿à¤à¤¦à¥ à¤à¤µà¤¿</div> (Abhinav Shukl)
+                    <div class="hindi">अभिनव शुक्ल, अंतर्रष्ट्रीय हिंदी कवि</div> (Abhinav Shukl)
                   </figcaption>
                 </figure>
               </div>
