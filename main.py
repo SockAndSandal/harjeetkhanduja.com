@@ -61,6 +61,10 @@ def tuktuk():
 def leaders():
     return render_template("leaders.html")
 
+@app.route('/book/ldb')
+def ldb():
+    return render_template("ldb.html")
+
 @app.route('/blog')
 def blog():
     return redirect('http://blog.harjeetkhanduja.com/')

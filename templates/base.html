@@ -25,20 +25,22 @@
           <li class="nav-item">
             <a class="nav-link {{ 'active' if active_page == 'home' else '' }}" href="/">HOME</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link {{ 'active' if active_page == 'about' else '' }}" href="/about">ABOUT</a>
-          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               BOOKS
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/book/ldb">LEADERS DECISIONS AND BIASES</a>
+              <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/book/how_leaders_decide">HOW LEADERS DECIDE</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" style="word-wrap: normal;" href="/book/nab">NOTHING ABOUT BUSINESS</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="/book/tuktuk">TUKTUK KI RAIL</a>
             </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {{ 'active' if active_page == 'about' else '' }}" href="/about">ABOUT</a>
           </li>
           <li class="nav-item">
             <a class="nav-link {{ 'active' if active_page == 'blog' else '' }}" href="/blog" tabindex="-1">BLOG</a>
