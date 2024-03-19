@@ -57,6 +57,10 @@ def nab():
 def tuktuk():
     return render_template("tuktuk.html")
 
+@app.route('/book/storytelling_leader')
+def storytelling():
+    return render_template("storytelling_leader.html")
+
 @app.route('/book/how_leaders_decide')
 def leaders():
     return render_template("leaders.html")
