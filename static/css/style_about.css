@@ -42,7 +42,10 @@ body {
     margin: 0 0 35px;
 }
 
-
+p {
+    color: black;
+    font-family: "Noto Sans Devanagari", "Noto Sans", sans-serif;
+}
 
 #row-settings1{
     margin-bottom: 20px;
